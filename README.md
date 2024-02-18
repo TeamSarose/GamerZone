@@ -7,12 +7,9 @@ Reviews of popular games.
 Responsive design for seamless browsing on mobile, tablet, and desktop.
 
 <h3>Usage</h3>
->Browse the news section for the latest gaming updates.
+Browse the news section for the latest gaming updates.
 Read reviews to discover new games.
 
-<h4>Credits
-  Sarose😎
-</h4>
-
+<h4>Credits : Sarose😎</h4>
 
 <h4>Feel free to customize this template to suit your needs!</h4
