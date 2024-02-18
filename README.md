@@ -11,6 +11,6 @@ Browse the news section for the latest gaming updates.
 Read reviews to discover new games.
 
 <h4>Feel free to customize this template to suit your needs!</h4
-<h4>Credits : Sarose😎</h4>
+<h4>Sarose😎</h4>
 
 
