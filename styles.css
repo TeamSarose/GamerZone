@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000 ;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+
+/* Navigation bar Css starts here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(151, 8, 156);
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    margin: 14px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login #signup{
+    background-color: #9e2584;
+    color: #f1f1f1;
+    border-radius: 5px;
+    margin-right: 14px;
+}
+/* Navigation bar Css ends here */
+
+
+/* Home page Css starts here */
+header{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left-side{
+    width: 700px;
+}
+
+header .left-side h1{
+    font-size: 4rem;
+}
+
+header .left-side h1 span{
+    color: #9e2584;
+}
+
+header .left-side p{
+    margin: 60px 0;
+    color: #777;
+}
+
+header .left-side a{
+    display: flex;
+    align-items: center;
+    background: #72015a;
+    width: 180px;
+    border-radius: 60px;
+    padding: 8px;
+}
+
+header .left-side a i{
+    background-color: #ffffff;
+    font-size: 30px;
+    border-radius: 50%; 
+}
+
+header .left-side a span{
+    color: #fff;
+    margin-left: 10px;
+}
+
+header img{ 
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+/* Home page Css ends here */
+
+
+/* News & Updates css starts here  */
+h2.seperator{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.news{
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.news .card,
+.library .game-list .list{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(139, 67, 135, 0.164);
+    border: .2rem solid #dadbdf;
+    transform: all .5s ease;
+}
+
+.news .card:hover,
+.library .game-list .list:hover{
+    border-color: #5d145fc9;
+}
+
+.news .card .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news .card .header i{
+    font-size: 40px;
+}
+
+.news .card .header h5{
+    font-size: 17px;
+    color: #9e2584;
+}
+
+.news .card .header p{
+    margin-top: 10px;
+    padding: 0 4px;
+}
+/* News & Updates css ends here  */
+
+
+/* Games library starts here */
+.library{
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.library .category{
+    display: flex;
+    gap: 14px;
+}
+
+.library .category a{
+    background-color: #dfdcdc;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.library .category a:hover{
+    color: #fff;
+    background-color: #9e2584;
+}
+
+.library .game-list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.library .game-list .list img{
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+}
+
+.library .game-list .list .info{
+    padding: 12px 0;
+}
+
+.library .game-list .list .info h5{
+    font-size: 18px;
+}
+
+.library .game-list .list .bid{
+    padding: 14px 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.library .game-list .list .bid a{
+    color: #ff0000;
+    background: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.library .game-list .list .bid a:hover{
+    color: #fff;
+    background-color: #ff0000;
+}
+
+
+
+
+
+ 
