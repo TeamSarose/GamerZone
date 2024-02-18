@@ -10,7 +10,7 @@ Responsive design for seamless browsing on mobile, tablet, and desktop.</p>
 <p>Browse the news section for the latest gaming updates.
 Read reviews to discover new games.</p>
 
-Credits.
-Sarose😎
+</h4>Credits,
+Sarose😎</h4>
 
 Feel free to customize this template to suit your needs!
