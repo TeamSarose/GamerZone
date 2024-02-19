@@ -586,7 +586,7 @@ footer .right p{
     }
 
     .players .list{
-        width: 55%;
+        width: 80%;
     }
 
     footer{
@@ -603,8 +603,16 @@ footer .right p{
 }
 
 @media screen and (max-width: 404px){
+    h2.seperator{
+        font-size: 28px;
+    }
+
+    nav .links a{
+        font-size: 12px;
+    }
+
     nav .login button{
-        padding: 5px 10px;
+        padding: 5px 8px;
         margin: 5px;
     }
 
