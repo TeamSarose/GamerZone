@@ -56,6 +56,11 @@ nav .login #signup{
     border-radius: 5px;
     margin-right: 14px;
 }
+
+nav .login #signup:hover{
+    background-color: #fff;
+    color: #000;
+}
 /* Navigation bar Css ends here */
 
 
@@ -106,9 +111,7 @@ header .left-side a span{
 }
 
 header img{ 
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+    width: 330px;
 }
 /* Home page Css ends here */
 
@@ -130,7 +133,8 @@ h2.seperator{
 }
 
 .news .card,
-.library .game-list .list{
+.library .game-list .list,
+.players .list{
     padding: 20px;
     background: #fff;
     border-radius: 18px;
@@ -140,7 +144,8 @@ h2.seperator{
 }
 
 .news .card:hover,
-.library .game-list .list:hover{
+.library .game-list .list:hover,
+.players .list:hover{
     border-color: #5d145fc9;
 }
 
@@ -166,7 +171,7 @@ h2.seperator{
 /* News & Updates css ends here  */
 
 
-/* Games library starts here */
+/* Games library css starts here */
 .library{
     padding: 0 80px;
     margin-top: 30px;
@@ -211,14 +216,14 @@ h2.seperator{
     font-size: 18px;
 }
 
-.library .game-list .list .bid{
+.library .game-list .list .site{
     padding: 14px 0 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.library .game-list .list .bid a{
+.library .game-list .list .site a{
     color: #ff0000;
     background: transparent;
     font-weight: bold;
@@ -229,13 +234,331 @@ h2.seperator{
     border-radius: 10px;
 }
 
-.library .game-list .list .bid a:hover{
+.library .game-list .list .site a:hover{
     color: #fff;
     background-color: #ff0000;
 }
 
+.view-more{
+    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-more button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #dfdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-more button:hover{
+    color: #fff;
+    background: #ff0000 ;
+}
+/* Games library css ends here */
 
 
+/* Players css starts here */
+.players{
+    padding:  0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.players .list{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    grid-area: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(139, 67, 135, 0.164);
+    transition: all 0.3s ease;
+}
+
+.players .list img{
+    width: 64px;
+}
+
+.players .list .info p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+/* Players css ends here */
 
 
- 
+/* Footer css starts here */
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links{
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a{
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover{
+    color: #fff;
+}
+
+footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover{
+    color: #ffd000;
+}
+
+footer .right p{
+    font-size: 13px;
+    color: #777;
+}
+/* Footer css ends here */
+
+
+/* Medaia query */
+@media screen and (max-width: 1400px){
+    nav,
+    header,
+    h2.seperator,
+    .news,
+    .library,
+    .players{
+        padding: 0 40px;
+    }
+
+    header .left-side h1{
+        font-size: 60px;
+    }
+
+    header img{
+        width: 500px;
+    }
+
+    .library .game-list .list img{
+        width: 180px;
+        height: 180px;
+    }
+
+    footer{
+        padding: 100px 40px;
+    }
+
+    footerh h3{
+        font-size: 30px;
+    } 
+}
+
+@media screen and (max-width: 1200px){
+    header .left-side h1{
+        font-size: 48px;
+    }
+
+    header img{
+        width: 400px;
+    }
+
+    h2.seperator{
+        font-size: 34px;
+    }
+
+    .news .card .header i{
+        font-size: 36px;
+    }
+
+    .news .card .header h5{
+        font-size: 15px;
+    }
+
+    .news .card p{
+        font-size: 14px;
+    }
+
+    .library .game-list{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .library .game-list .list{
+        width: 48%;
+    }
+
+    .library .game-list .list img{
+        width: 100%;
+        height: auto;
+    }
+
+    .players{
+        flex-wrap: wrap;
+    }
+
+    .players .list{
+        width: 48%;
+    }
+
+    footer .links a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    nav a.logo{
+        font-size: 28px;
+    }
+
+    nav .links a{
+        font-size: 14px;
+    }
+
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    header .left-side{
+        width: 100%;
+    }
+
+    header img{
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .news{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .news .card{
+        width: 48%;
+    }
+
+    .players{
+        gap: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3{
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    footer .right{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav,
+    header,
+    h2.seperator,
+    .news,
+    .library,
+    .players{
+        padding: 0 20px;
+    }
+
+     nav .logo{
+        display: none;
+    }
+
+    nav .links a{
+        font-size: 12px;
+    }
+
+    nav.login buttton{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    header .left-side h1{
+        font-size: 36px;
+    }
+
+    header .left-side p{
+        font-size: 14px;
+    }
+
+    header .left-side a{
+        padding: 6px;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    header .left-side a i{
+        padding: 6px;
+        font-size: 20px;
+    }
+
+    h2.seperator{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    header .left-side h1{
+        font-size: 30px;
+    }
+
+    .news .card{
+        width: 100%;
+    }
+
+    .library .game-list .list,
+    .players .list{
+        width: 47%;
+    }
+
+    .library .category a{
+        font-size: 13px;
+    }
+}
