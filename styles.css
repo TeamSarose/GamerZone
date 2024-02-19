@@ -566,3 +566,51 @@ footer .right p{
         font-size: 24px;
     }
 }
+
+@media screen and (max-width: 454px){
+    nav,
+    header,
+    h2.seperator,
+    .news,
+    .library,
+    .players{
+        padding: 0 10px;
+    }
+
+    nav .links a{
+        font-size: 10px;
+    }
+
+    nav .login #signup{
+        margin-right: 10px;
+    }
+
+    .players .list{
+        width: 55%;
+    }
+
+    footer{
+        padding: 50px 10px;
+    }
+
+    footer h3{
+        font-size: 20px;
+    }
+
+    footer .links a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 404px){
+    nav .login button{
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    nav .login #signup{
+        margin-right: 0px;
+    }
+
+}
+
